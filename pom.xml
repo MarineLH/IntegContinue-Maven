@@ -116,7 +116,7 @@
 	</dependencies>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/MarineLH/mvc-sansjpa.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/MarineLH/IntegContinue-Maven.git</developerConnection>
   </scm>
 
 	<build>
