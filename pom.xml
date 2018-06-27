@@ -5,7 +5,7 @@
 	<!-- artifactId correspond au nom de votre application, n'hésitez pas à 
 		changer la valeur par défaut -->
 	<artifactId>mvc</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<!-- précisez le nom et l'email de chaque membre de votre groupe -->
@@ -121,7 +121,7 @@
 	</dependencies>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/MarineLH/IntegContinue-Maven.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/MarineLH/mvc-sansjpa.git</developerConnection>
 	</scm>
 
 	<build>
@@ -152,18 +152,9 @@
 				<version>2.5.3</version>
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<version>11.0.0.Final</version>
 				</configuration>
 			</plugin>
-
-		<!-- 	<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-scm-plugin</artifactId>
-				<version>1.10.0</version>
-				<configuration>
-					<connectionType>developerConnection</connectionType>
-				</configuration>
-			</plugin> -->
-
 		</plugins>
 	</build>
 </project>
