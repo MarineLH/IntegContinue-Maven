@@ -4,18 +4,14 @@
 	<!-- artifactId correspond au nom de votre application, n'hésitez pas à 
 		changer la valeur par défaut -->
 	<artifactId>mvc</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<!-- précisez le nom et l'email de chaque membre de votre groupe -->
 	<developers>
 		<developer>
-			<name>VOTRE_NOM</name>
-			<email>VOTRE_EMAIL</email>
-		</developer>
-		<developer>
-			<name>VOTRE_NOM</name>
-			<email>VOTRE_EMAIL</email>
+			<name>LHUILLIER</name>
+			<email>marine.lhuillier@epsi.fr</email>
 		</developer>
 	</developers>
 
@@ -121,7 +117,6 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/MarineLH/mvc-sansjpa.git</developerConnection>
-	  <tag>v0.0.1</tag>
   </scm>
 
 	<build>
@@ -134,11 +129,10 @@
 				<version>1.2.1.Final</version>
 				<executions>
 					<execution>
+						<phase>install</phase>
 						<goals>
 							<goal>deploy</goal>
 						</goals>
-						<phase>install</phase>
-						<configuration />
 					</execution>
 				</executions>
 				<configuration>
@@ -149,13 +143,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version>
+				<version>2.5.3</version>				
 				<configuration>
-					<tagNameFormat>v@{project.version}</tagNameFormat>
-					<version>11.0.0.Final</version>
-					<goals>
-						<goal>install</goal>
-					</goals>
+					<goals>install</goals>
 				</configuration>
 			</plugin>
 		</plugins>
